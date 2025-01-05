@@ -1,0 +1,301 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+}
+
+.logo img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.language-selector {
+    display: flex;
+    gap: 10px;
+}
+
+.language-selector button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    
+    
+    position: absolute;
+  width: 100%;
+  height: 100vh; /* Слайды занимают всю высоту экрана */
+}
+
+/* Стили для изображений внутри слайдов */
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+  }
+  /* Стили для текста */
+.text {
+    position: absolute;
+    left: 10%;
+    /*Отступслева*/top: 60%;
+    /*Позиционированиеповертикали(поцентру)*/transform: translateY(-50%);
+    /*Центрированиеповертикали*/color: white;
+    font-size: 200px;
+    padding: 20px;
+    
+    /*Теньдлячитаемоститекста*/width: 60%;
+    -webkit-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+}
+  
+  /* Стили для заголовка */
+  .text h2 {
+    margin: 0;
+    font-size: 100px;
+    font-weight: 400;
+    font-family: "Marcellus", serif;
+    font-style: normal;
+  }
+  
+  /* Стили для описания */
+  .text p {
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  /* Кнопка */
+  .slider-button {
+    display: inline-block;
+    background-color: #f44336;
+    color: white;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .slider-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Кнопки "предыдущий" и "следующий" */
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  
+  
+  
+  
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+
+@media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navbar a {
+        margin: 5px;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.about-section .image-container {
+    flex: 1 1 300px;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-section .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-section .text-container {
+    flex: 1 1 300px;
+    max-width: 600px;
+    padding: 10px;
+}
+
+.about-section h2 {
+    color: #2c6e49;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.gallery-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.gallery-item {
+    flex: 1 1 300px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gallery-item p {
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .gallery-item {
+        flex: 1 1 100%;
+    }
+}
+
